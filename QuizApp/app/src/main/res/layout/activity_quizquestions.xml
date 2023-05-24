@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+
+    tools:context=".QuizquestionsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:text="Which country does this flag belong"
+            />
+        <ImageView
+            android:id="@+id/tv_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_flag_of_argentina"/>
+<LinearLayout
+    android:id="@+id/progress_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginTop="16dp"
+    >
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="0dp"
+        style ="?android:attr/progressBarStyleHorizontal"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:max="10"
+        android:minHeight="50dp"
+        android:progress="0"
+        android:indeterminate="false"
+        />
+    <TextView
+        android:id="@+id/tv_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:text="0/10"
+        android:textColor="#7A8089"
+        android:padding="15dp"/>
+
+
+</LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_optionone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:shape ="rectangle"
+
+            android:background="@drawable/default_option_border_bg"
+            android:padding="10dp"
+            android:textColor="#7A8089"
+            android:text="Apple"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_optiontwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/default_option_border_bg"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textColor="#7A8089"
+            android:text="Apple"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_optionthree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/default_option_border_bg"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textColor="#7A8089"
+            android:text="Apple"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_optionfour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/default_option_border_bg"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textColor="#7A8089"
+            android:text="Apple"
+            android:gravity="center"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_submit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:text="Submit"
+            android:background="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+</ScrollView>
